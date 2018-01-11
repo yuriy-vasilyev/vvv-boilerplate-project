@@ -3,9 +3,9 @@ Boilerplate project to use for creating new sites in VVV2.
 Steps to make:
 1. Add a new record into `vvv-custom.yml` like
 
-    myawesomesite:
-        hosts:
-          - myawesomesite.test
+<pre><code>myawesomesite:
+    hosts:
+      - myawesomesite.test</code></pre>
 
 Of course, you can add a repo link here, extra hosts, etc.
 
