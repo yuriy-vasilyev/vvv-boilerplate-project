@@ -20,7 +20,8 @@ cd ${VVV_PATH_TO_SITE}/public_html
 if ! $(wp core is-installed --allow-root); then
   wp core download --allow-root
   wp core config --dbname="${VVV_SITE_NAME}" --dbuser=wp --dbpass=wp --quiet --allow-root --extra-php <<PHP
-  
+define( 'WP_POST_REVISIONS', false );
+
 /** Enable debug tools */
 define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_DISPLAY', false );
